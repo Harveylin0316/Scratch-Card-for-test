@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刮刮樂 - Scratch Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎁 刮刮樂大獎 🎁</h1>
+            <p class="subtitle">刮開覆蓋層，看看您中了什麼獎！</p>
+        </div>
+
+        <div class="scratch-card-container">
+            <div class="scratch-card" id="scratchCard">
+                <canvas id="scratchCanvas"></canvas>
+                <div class="prize-content" id="prizeContent">
+                    <div class="prize-text" id="prizeText"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" id="newCardBtn">再來一張</button>
+            <div class="stats">
+                <p>已刮開: <span id="cardsScratched">0</span> 張</p>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>使用說明</h3>
+            <p>🖱️ 用滑鼠在卡片上拖動來刮開覆蓋層</p>
+            <p>📱 在手機上用手指滑動來刮開</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
